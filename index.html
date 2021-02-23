@@ -1,6 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+
+        body{
+            background-color: #f9f7f7;
+        }
+        
+        .container{
+           display: flow-root;
+        }
+
+        .skills{
+            width: 12%;
+            height: 230px;
+            float: right;
+            padding-top: 5px;
+            padding-left: 20px;
+            border-left: 2px dashed rgb(172, 167, 167);
+        }
+
+        .coursework{
+            width: 30%;
+            height: 230px;
+            display: flow-root;
+            float:right;
+            padding-left: 27px;
+            padding-top: 5px;
+            border-left: 2px dashed rgb(172, 167, 167);
+        }
+
+        .leadership{
+            width: 52%;
+            height: 220px;
+            float:left;
+            padding-right: 15px;
+            padding-top: 5px;
+        }
+
+        h1{
+            color: #3f72af;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        h2{
+            color: #000;
+            font-weight: bold;
+        }
+
+        h3{
+            display: inline;
+        }
+
+        h4{
+            display: inline;
+            float: right;
+            color: #3f72af;
+        }
+
+        hr{
+            border-style: dashed none none;
+            height: 0px;
+            width: 100%;
+            border-color: rgb(172, 167, 167);
+            border-width: 2px;
+        }
+
+        footer{
+            text-align: center;
+            background-color: rgb(172, 167, 167);
+            color: #f9f7f7;
+            margin: 0px;
+            padding: 15px;
+        }
+
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +86,16 @@
         <div style="text-align: center;">
             <img src="https://icons-for-free.com/iconfiles/png/512/avatar+human+man+profile+icon-1320085876716628234.png" alt="Empty profile icon" width="8%" height="8%";>
         </div>
-        <h1 style="text-align: center;">Andres Genda</h1>
-        <address>
-            <p style="text-align: center;">
-                Mail: <a href="">E-Mail</a>
-                 | Phone: <a href="">Number</a>
-                 | Github: <a href="https://www.github.com/andresgenda">andresgenda</a>
-            </p>
-        </address>
+        <div>
+            <h1>Andres Genda</h1>
+            <address>
+                <p style="text-align: center;">
+                    Mail: <a href="">E-Mail</a>
+                     | Phone: <a href="">Number</a>
+                     | Github: <a href="https://www.github.com/andresgenda">andresgenda</a>
+                </p>
+            </address>
+        </div>
     </header>
     <main>
         <hr>
@@ -34,8 +111,8 @@
             <section>
                 <ul>
                     <li>
-                        <h3 style="display: inline;">Virtual Learning Center</h3>
-                        <h4 style="display: inline; float: right;">02/2020 - 06/2020</h4>
+                        <h3>Virtual Learning Center</h3>
+                        <h4>02/2020 - 06/2020</h4>
                         <p>Migrated an outdated online course on learning English from PHP to HTML, CSS and JavaScript.</p>
                     </li>
                 </ul>
@@ -47,8 +124,8 @@
             <section>
                 <ul>
                     <li>
-                        <h3 style="display: inline;">Tecnologico de Monterrey</h3>
-                        <h4 style="display: inline; float:right;">Graduation Date: Dec 2022</h4>
+                        <h3>Tecnologico de Monterrey</h3>
+                        <h4>Graduation Date: Dec 2022</h4>
                         <p>B.S. Computer Science and Technology</p>
                     </li>
                 </ul>
@@ -56,8 +133,8 @@
             <section>
                 <ul>
                     <li>
-                        <h3 style="display: inline;">Vanier College</h3>
-                        <h4 style="display: inline; float:right;">2016 - Montreal, Canada</h4>
+                        <h3>Vanier College</h3>
+                        <h4>2016 - Montreal, Canada</h4>
                         <p>Summer course on ethics and the French language.</p>
                     </li>
                 </ul>
@@ -65,27 +142,12 @@
         </div>
         <hr>
         <div>
-            <h2>Relevant Coursework</h2>
-            <nav>
-                <p>
-                    <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC1018&lang=EN">Data Structures</a> | 
-                    <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC2017&lang=EN">Analysis and Design of Algorithms</a> | 
-                    <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC3041&lang=EN">Advanced Database Systems</a> | 
-                    <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC1016&lang=EN">Computer Organization</a> | 
-                    <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC2008&lang=EN">Operating Systems</a> | 
-                    <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC2022&lang=EN">Network Interconnection</a> | 
-                    <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC2020&lang=EN">Computational Mathematics</a>
-                </p>
-            </nav>
-        </div>
-        <hr>
-        <div>
             <h2>Projects</h2>
             <section>
                 <ul>
                     <li>
-                        <h3 style="display: inline;">Don't Step Back!</h3>
-                        <h4 style="display: inline; float:right;">04/2020 - 06/2020</h4>
+                        <h3>Don't Step Back!</h3>
+                        <h4>04/2020 - 06/2020</h4>
                         <p><i>Developed with Java</i></p>
                         <p>
                             Videogame consisting of 5 levels, in which the player has to correctly solve a puzzle
@@ -93,8 +155,8 @@
                         </p>
                     </li>
                     <li>
-                        <h3 style="display: inline;">Webmex</h3>
-                        <h4 style="display: inline; float:right;">03/2020 - 06/2020</h4>
+                        <h3>Webmex</h3>
+                        <h4>03/2020 - 06/2020</h4>
                         <p><i>Developed with PHP and SQL</i></p>
                         <p>
                             Webpage in which a user can share and find different tech projects,
@@ -105,40 +167,55 @@
             </section>
         </div>
         <hr>
-        <div>
-            <h2>Leadership</h2>
-            <section>
-                <ul>
-                    <li>
-                        <h3 style="display: inline;">Museum of Contemporary Art of Monterrey (MARCO)</h3>
-                        <h4 style="display: inline; float:right;">01/2019 - 04/2019</h4>
-                        <p>Volunteer as a guide for museum tours.</p>
-                    </li>
-                    <li>
-                        <h3 style="display: inline;">HackMTY</h3>
-                        <h4 style="display: inline; float:right;">08/2018</h4>
-                        <p>Volunteered as staff for <span style="color:slateblue;"><i>HackMTY</i></span>, Mexico's largest student hackathon.</p>
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <hr>
-        <div>
-            <h2>Skills</h2>
-            <ol>
-                <li>C++</li>
-                <li>HTML/CSS</li>
-                <li>Java</li>
-                <li>JavaScript</li>
-                <li>C</li>
-                <li>PHP</li>
-                <li>SQL</li>
-            </ol>
+        <div class="container">
+            <div class="skills">
+                <h2>Skills</h2>
+                <ol>
+                    <li>C++</li>
+                    <li>HTML/CSS</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>C</li>
+                    <li>PHP</li>
+                    <li>SQL</li>
+                </ol>
+            </div>
+            <div class="coursework">
+                <h2>Relevant Coursework</h2>
+                <nav>
+                    <p>
+                        <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC1018&lang=EN">Data Structures</a> | 
+                        <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC2017&lang=EN">Analysis and Design of Algorithms</a> | 
+                        <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC3041&lang=EN">Advanced Database Systems</a> | 
+                        <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC1016&lang=EN">Computer Organization</a> | 
+                        <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC2008&lang=EN">Operating Systems</a> | 
+                        <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC2022&lang=EN">Network Interconnection</a> | 
+                        <a href="https://samp.itesm.mx/Materias/VistaPreliminarMateria?clave=TC2020&lang=EN">Computational Mathematics</a>
+                    </p>
+                </nav>
+            </div>
+            <div class="leadership">
+                <h2>Leadership</h2>
+                <section>
+                    <ul>
+                        <li>
+                            <h3>Museum of Contemporary Art of Monterrey (MARCO)</h3>
+                            <h4>01/2019 - 04/2019</h4>
+                            <p>Volunteer as a guide for museum tours.</p>
+                        </li>
+                        <li>
+                            <h3>HackMTY</h3>
+                            <h4>08/2018</h4>
+                            <p>Volunteered as staff for <span style="color:slateblue;"><i>HackMTY</i></span>, Mexico's largest student hackathon.</p>
+                        </li>
+                    </ul>
+                </section>
+            </div> 
         </div>
     </main>
     <hr>
-    <footer style="text-align: center;">
-        Realizado por Andres Genda - Ultima modificacion: 16 de febrero de 2021
+    <footer>
+        Realizado por Andres Genda - Ultima modificacion: 23 de febrero de 2021
     </footer>
 </body>
 </html>
